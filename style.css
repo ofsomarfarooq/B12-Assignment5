@@ -4,6 +4,8 @@
   font-weight: normal;
   font-style: normal;
 }
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap');
+
 
 .navbar{
   display: flex;
@@ -12,6 +14,8 @@
   padding: 24px 60px;
   background: whitesmoke;
   color: #006747;
+  flex-wrap:wrap;
+  gap:20px;
 }
 
 .nav-brand {
@@ -62,3 +66,259 @@
   background:#00A63E ;
   color: white;
 }
+
+
+
+.hero {
+  padding:20px 60px;
+  text-align:center;
+  color:#ffffff;
+  background: #013223;
+  background: linear-gradient(90deg,#013223 0%, #006747 50%, #013223 100%);
+  
+}
+
+.hero-inner {
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  
+}
+
+.hero-logo {
+  width:110px;
+  height:110px;
+}
+
+.hero-title {
+  margin:0;
+  font-size:40px;
+  font-weight:bolder;
+  letter-spacing:1.5px;
+}
+
+.hero-tagline {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.main-layout{
+  padding: 30px;
+  background-color: #d3ffdc;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+  
+}
+
+.cards {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card{
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:hover {
+  box-shadow:0 8px 22px -8px rgba(0,0,0,0.18);
+  transform:translateY(-3px);
+} 
+
+.card-top{
+  display: flex;
+  justify-content: space-between;
+}
+.card-icon{
+  width: 32px;
+  height: 32px;
+  padding: 10px;
+  background: #FFE3E2;
+  border-radius: 16px;
+}
+
+.heart-button{
+  padding: none;
+  border: none;
+  font-size: 24px;
+  background: none;
+}
+
+.card-body{
+  font-family: "Hind Madurai", sans-serif;
+}
+
+.card-name {
+  margin:20px 0 4px;
+  font-size:24px;
+  font-weight:600;
+ 
+}
+.card-name-en {
+  margin:0 0 6px;
+  font-size:15px;
+  font-weight:600;
+  color:gray;
+}
+.card-number {
+  font-size:30px;
+  font-weight:700;
+  color:#000000;
+}
+
+.badge {
+  align-items:center;
+  padding:10px 20px;
+  font-size:15px;
+  font-weight:500;
+  border-radius:30px;
+  background:rgb(216, 216, 216); 
+  color:#757575; 
+}
+
+
+
+.card-button {
+  bottom:14px;
+  display:flex;
+  gap:10px;
+}
+
+.btn {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px ;
+  padding:15px 60px;
+  border-radius:8px;
+  font-size:20px;
+  font-weight:600;
+  cursor:pointer;
+}
+
+.btn-copy {
+  border-color:#c7d2cf;
+  color:#22312d;
+}
+
+
+.btn-call {
+  background:green;
+  color:#ffffff;
+  border-color:green;
+  box-shadow:0 2px 6px -2px rgba(0,0,0,0.25);
+}
+
+
+
+
+.history {
+  background:#ffffff;
+  border-radius:14px;
+  padding:16px 16px 18px;
+  display:flex;
+  flex-direction:column;
+}
+
+.history-header {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:10px;
+  gap:16px;
+}
+
+.history-header h3 {
+  font-size:20px;
+  font-weight:600;
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+
+.history-icon {
+  width:20px;
+  height:20px;
+}
+
+.clear-btn {
+  background:#00A63E;
+  color:#ffffff;
+  border: none;
+  font-size:16px;
+  padding:15px 30px;
+  border-radius:30px;
+  font-weight:600;
+}
+
+#historyList{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+}
+
+
+#historyList li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  background-color: whitesmoke;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+
+
+.history-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.history-service {
+  margin: 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.history-number {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 400;
+  color: #666;
+}
+
+.history-time {
+  font-size: 15px;
+  color: #555;
+}
+
+
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-stats {
+    flex-direction: row;
+    margin-top: 30px;
+  }
+  .main-layout{
+    display: flex;
+    flex-direction: column;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+  }
+ 
+}
+
+
+

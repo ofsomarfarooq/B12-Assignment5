@@ -6,32 +6,334 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="inter">
-    <header class="navbar">
-  <div class="nav-brand">
-    <img class="nav-logo" src="assets/logo.png" alt="Logo">
-    <span class="nav-title"><span>Emergency </span><span>Service</span></span>
-  </div>
 
-  <div class="nav-stats">
-    <div class="stat">
-        <span class="stat-value">0</span>
-        <img src="assets/heart.png" alt="Heart" class="stat-icon">
-      
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="nav-brand">
+      <img class="nav-logo" src="assets/logo.png" alt="Logo">
+      <span class="nav-title"><span>Emergency </span><span>Service</span></span>
     </div>
-    <div class="stat">
-        <span class="stat-value">100</span>
-        <img src="assets/coin.png" alt="Coins" class="stat-icon">
+
+    <div class="nav-stats">
+      <div class="stat">
+          <span class="stat-value" id="heartCount">0</span>
+          <img src="assets/heart.png" alt="Heart" class="stat-icon">
+      </div>
+      <div class="stat">
+          <span class="stat-value" id="coinCount">100</span>
+          <img src="assets/coin.png" alt="Coins" class="stat-icon">
       
-    </div>
-    <div class="stat copy-count" >
-        <span class="stat-value">0</span><span> Copy</span>
+      </div>
+      <div class="stat copy-count" >
+          <span class="stat-value" id="copyCount">0</span><span> Copy</span>
       
+      </div>
     </div>
-  </div>
-</header>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <img src="assets/logo-dark.png" alt="" class="hero-logo">
+      <h1 class="hero-title">Emergency Service Directory</h1>
+      <p class="hero-tagline">
+        Government Emergency Services at Your Fingertips – A Project by the Government of the People’s Republic of Bangladesh
+      </p>
+    </div>
+  </section>
+
+  <section class="main-layout">
+    <div class="cards">
+        <!-- Card1 -->
+        <div class="card">
+
+          <div class="card-top">
+            <img src="assets/emergency.png" alt="" class="card-icon">
+            <button class="heart-button">
+              <i class="fa-regular fa-heart heart-img"></i>
+            </button>
+          </div>
+
+          <div class="card-body">
+            <h3 class="card-name">National Emergency Number</h3>
+            <p class="card-name-en">National Emergency (EN)</p>
+            <h2 class="card-number">999</h2>
+            <span class="badge">All</span>
+          </div>
+
+          <div class="card-button">
+            <button type="button" class="btn btn-copy">
+              <i class="fa-regular fa-copy"></i>
+               Copy
+            </button>
+            <button type="button" class="btn btn-call">
+              <i class="fa-solid fa-phone"></i>
+              Call
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Card2 -->
+        <div class="card">
+
+          <div class="card-top">
+            <img src="assets/emergency.png" alt="" class="card-icon">
+            <button class="heart-button">
+              <i class="fa-regular fa-heart heart-img"></i>
+            </button>
+          </div>
+
+          <div class="card-body">
+            <h3 class="card-name">National Emergency Number</h3>
+            <p class="card-name-en">National Emergency (EN)</p>
+            <h2 class="card-number">999</h2>
+            <span class="badge">All</span>
+          </div>
+
+          <div class="card-button">
+            <button type="button" class="btn btn-copy">
+              <i class="fa-regular fa-copy"></i>
+               Copy
+            </button>
+            <button type="button" class="btn btn-call">
+              <i class="fa-solid fa-phone"></i>
+              Call
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Card3 -->
+        <div class="card">
+
+          <div class="card-top">
+            <img src="assets/emergency.png" alt="" class="card-icon">
+            <button class="heart-button">
+              <i class="fa-regular fa-heart heart-img"></i>
+            </button>
+          </div>
+
+          <div class="card-body">
+            <h3 class="card-name">National Emergency Number</h3>
+            <p class="card-name-en">National Emergency (EN)</p>
+            <h2 class="card-number">999</h2>
+            <span class="badge">All</span>
+          </div>
+
+          <div class="card-button">
+            <button type="button" class="btn btn-copy">
+              <i class="fa-regular fa-copy"></i>
+               Copy
+            </button>
+            <button type="button" class="btn btn-call">
+              <i class="fa-solid fa-phone"></i>
+              Call
+            </button>
+          </div>
+
+        </div>
+        
+        <!-- Card4 -->
+        <div class="card">
+
+          <div class="card-top">
+            <img src="assets/emergency.png" alt="" class="card-icon">
+            <button class="heart-button">
+              <i class="fa-regular fa-heart heart-img"></i>
+            </button>
+          </div>
+
+          <div class="card-body">
+            <h3 class="card-name">National Emergency Number</h3>
+            <p class="card-name-en">National Emergency (EN)</p>
+            <h2 class="card-number">999</h2>
+            <span class="badge">All</span>
+          </div>
+
+          <div class="card-button">
+            <button type="button" class="btn btn-copy">
+              <i class="fa-regular fa-copy"></i>
+               Copy
+            </button>
+            <button type="button" class="btn btn-call">
+              <i class="fa-solid fa-phone"></i>
+              Call
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Card5 -->
+        <div class="card">
+
+          <div class="card-top">
+            <img src="assets/emergency.png" alt="" class="card-icon">
+            <button class="heart-button">
+              <i class="fa-regular fa-heart heart-img"></i>
+            </button>
+          </div>
+
+          <div class="card-body">
+            <h3 class="card-name">National Emergency Number</h3>
+            <p class="card-name-en">National Emergency (EN)</p>
+            <h2 class="card-number">999</h2>
+            <span class="badge">All</span>
+          </div>
+
+          <div class="card-button">
+            <button type="button" class="btn btn-copy">
+              <i class="fa-regular fa-copy"></i>
+               Copy
+            </button>
+            <button type="button" class="btn btn-call">
+              <i class="fa-solid fa-phone"></i>
+              Call
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Card6 -->
+        <div class="card">
+
+          <div class="card-top">
+            <img src="assets/emergency.png" alt="" class="card-icon">
+            <button class="heart-button">
+              <i class="fa-regular fa-heart heart-img"></i>
+            </button>
+          </div>
+
+          <div class="card-body">
+            <h3 class="card-name">National Emergency Number</h3>
+            <p class="card-name-en">National Emergency (EN)</p>
+            <h2 class="card-number">999</h2>
+            <span class="badge">All</span>
+          </div>
+
+          <div class="card-button">
+            <button type="button" class="btn btn-copy">
+              <i class="fa-regular fa-copy"></i>
+               Copy
+            </button>
+            <button type="button" class="btn btn-call">
+              <i class="fa-solid fa-phone"></i>
+              Call
+            </button>
+          </div>
+
+        </div>
+
+
+        <!-- Card7 -->
+        <div class="card">
+
+          <div class="card-top">
+            <img src="assets/emergency.png" alt="" class="card-icon">
+            <button class="heart-button">
+              <i class="fa-regular fa-heart heart-img"></i>
+            </button>
+          </div>
+
+          <div class="card-body">
+            <h3 class="card-name">National Emergency Number</h3>
+            <p class="card-name-en">National Emergency (EN)</p>
+            <h2 class="card-number">999</h2>
+            <span class="badge">All</span>
+          </div>
+
+          <div class="card-button">
+            <button type="button" class="btn btn-copy">
+              <i class="fa-regular fa-copy"></i>
+               Copy
+            </button>
+            <button type="button" class="btn btn-call">
+              <i class="fa-solid fa-phone"></i>
+              Call
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Card8 -->
+        <div class="card">
+
+          <div class="card-top">
+            <img src="assets/emergency.png" alt="" class="card-icon">
+            <button class="heart-button">
+              <i class="fa-regular fa-heart heart-img"></i>
+            </button>
+          </div>
+
+          <div class="card-body">
+            <h3 class="card-name">National Emergency Number</h3>
+            <p class="card-name-en">National Emergency (EN)</p>
+            <h2 class="card-number">999</h2>
+            <span class="badge">All</span>
+          </div>
+
+          <div class="card-button">
+            <button type="button" class="btn btn-copy">
+              <i class="fa-regular fa-copy"></i>
+               Copy
+            </button>
+            <button type="button" class="btn btn-call">
+              <i class="fa-solid fa-phone"></i>
+              Call
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Card9 -->
+        <div class="card">
+
+          <div class="card-top">
+            <img src="assets/emergency.png" alt="" class="card-icon">
+            <button class="heart-button">
+              <i class="fa-regular fa-heart heart-img"></i>
+            </button>
+          </div>
+
+          <div class="card-body">
+            <h3 class="card-name">National Emergency Number</h3>
+            <p class="card-name-en">National Emergency (EN)</p>
+            <h2 class="card-number">999</h2>
+            <span class="badge">All</span>
+          </div>
+
+          <div class="card-button">
+            <button type="button" class="btn btn-copy">
+              <i class="fa-regular fa-copy"></i>
+               Copy
+            </button>
+            <button type="button" class="btn btn-call">
+              <i class="fa-solid fa-phone"></i>
+              Call
+            </button>
+          </div>
+
+        </div>
+
+    </div>
+
+    <div class="history">
+      <div class="history-header">
+        <h3 class="history-title">
+          <i class="fa-regular fa-clock" class="history-icon"></i>
+          Call History
+        </h3>
+        <button id="clearHistoryBtn" class="clear-btn">Clear</button>
+      </div>
+      <ul id="historyList"></ul>
+    </div>
+
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
