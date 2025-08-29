@@ -209,12 +209,12 @@
 }
 
 .btn-copy {
-  background: white;
+  background: whitesmoke;
   border:none;
   color:#22312d;
 }
 .btn-copy:hover{
-  background:whitesmoke;
+  background:rgb(200, 200, 200);
 }
 
 

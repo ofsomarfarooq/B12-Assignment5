@@ -60,24 +60,24 @@ for (var i = 0; i < cards.length; i++) {
 
 
 function addToHistory(service, number) {
-  let li = document.createElement("li");
+  const li = document.createElement("li");
 
 
-  let leftDiv = document.createElement("div");
+  const leftDiv = document.createElement("div");
   leftDiv.classList.add("history-left");
 
-  let serviceEl = document.createElement("h2");
+  const serviceEl = document.createElement("h2");
   serviceEl.classList.add("history-service");
   serviceEl.innerText = service;
 
-  let numberEl = document.createElement("h3");
+  const numberEl = document.createElement("h3");
   numberEl.classList.add("history-number");
   numberEl.innerText = number;
 
   leftDiv.appendChild(serviceEl);
   leftDiv.appendChild(numberEl);
 
-  let rightDiv = document.createElement("div");
+  const rightDiv = document.createElement("div");
   rightDiv.classList.add("history-time");
   rightDiv.innerText = getCurrentTime();
 
